@@ -9,19 +9,19 @@
 import UIKit
 
 extension Bundle {
-    func decode<T: Decodable>(_ type: T.Type, from file: String) -> T {
-        guard let url = self.url(forResource: file, withExtension: nil) else {
-            fatalError("Failed to locate \(file) in bundle.")
+    func decode<T: Decodable>(_ type: T.Type, from fileName: String) -> T {
+        guard let url = self.url(forResource: fileName, withExtension: nil) else {
+            fatalError("Failed to locate \(fileName) in bundle.")
         }
 
         guard let data = try? Data(contentsOf: url) else {
-            fatalError("Failed to load \(file) from bundle.")
+            fatalError("Failed to load \(fileName) from bundle.")
         }
 
         let decoder = JSONDecoder()
 
         guard let loaded = try? decoder.decode(T.self, from: data) else {
-            fatalError("Failed to decode \(file) from bundle.")
+            fatalError("Failed to decode \(fileName) from bundle.")
         }
 
         return loaded
