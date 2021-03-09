@@ -16,8 +16,11 @@ struct ContentView: View {
             List() {
                 ForEach(menu) { section in
                     Section(header: Text(section.name)) {
-                        ForEach(section.items) {
-                            ItemRow(item: $0)
+                        ForEach(section.items) { item in
+                            NavigationLink(
+                                destination: ItemDetail(item: item)) {
+                                    ItemRow(item: item)
+                                }
                         }
                     }
                 }
