@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E71B9FA25F8644000BB3A0B /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E71B9F925F8644000BB3A0B /* OrderView.swift */; };
+		9E71B9FD25F8655A00BB3A0B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E71B9FC25F8655A00BB3A0B /* MainView.swift */; };
 		9E98B76525F70D18004FA0C4 /* iDineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98B76425F70D18004FA0C4 /* iDineApp.swift */; };
 		9E98B76725F70D18004FA0C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98B76625F70D18004FA0C4 /* ContentView.swift */; };
 		9E98B76925F70D19004FA0C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E98B76825F70D19004FA0C4 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E71B9F925F8644000BB3A0B /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		9E71B9FC25F8655A00BB3A0B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9E98B76125F70D18004FA0C4 /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E98B76425F70D18004FA0C4 /* iDineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineApp.swift; sourceTree = "<group>"; };
 		9E98B76625F70D18004FA0C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,9 +69,11 @@
 			isa = PBXGroup;
 			children = (
 				9E98B76425F70D18004FA0C4 /* iDineApp.swift */,
+				9E71B9FC25F8655A00BB3A0B /* MainView.swift */,
 				9E98B76625F70D18004FA0C4 /* ContentView.swift */,
 				9E98B78425F7241D004FA0C4 /* ItemDetail.swift */,
 				9E98B78125F71ECB004FA0C4 /* ItemRow.swift */,
+				9E71B9F925F8644000BB3A0B /* OrderView.swift */,
 				9E98B77425F70DCB004FA0C4 /* Helper.swift */,
 				9E98B77725F70DE9004FA0C4 /* Menu.swift */,
 				9E98B77A25F70DF0004FA0C4 /* Order.swift */,
@@ -158,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E98B78525F7241D004FA0C4 /* ItemDetail.swift in Sources */,
+				9E71B9FD25F8655A00BB3A0B /* MainView.swift in Sources */,
+				9E71B9FA25F8644000BB3A0B /* OrderView.swift in Sources */,
 				9E98B76725F70D18004FA0C4 /* ContentView.swift in Sources */,
 				9E98B76525F70D18004FA0C4 /* iDineApp.swift in Sources */,
 				9E98B77B25F70DF0004FA0C4 /* Order.swift in Sources */,
